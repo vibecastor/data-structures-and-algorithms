@@ -11,7 +11,7 @@ binarysearch.binarySearch = (someArray, key) => {
       return i;
     }
   }
-  return -1;
+  return -1   ;
 };
 
 binarySearch(testArray, testKey);
