@@ -56,4 +56,11 @@ describe('linked-list.js', () => {
     testList.append(5);
     expect(testList.popLastNode()).toEqual(5);
   });
+  test('#mergeList', () => {
+    const testList1 = new LinkedList();
+    const testList2 = new LinkedList();
+    mergeList (testlist1, testList2) => { // not sure what to pass in to test this yet...
+      
+    }
+  })
 });
