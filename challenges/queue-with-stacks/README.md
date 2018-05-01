@@ -10,4 +10,4 @@ dequeue() which extracts a value from the Queue using a first-in, first-out appr
 - You have access to 2 Stack instances with push and pop methods.
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![]('./assets/queue-with-stacks')
