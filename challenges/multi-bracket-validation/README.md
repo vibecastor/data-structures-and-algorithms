@@ -8,4 +8,3 @@
 	- Curly Brackets : {}
 ## Solution
 ![multi-bracket-validation-whiteboard](./src/assets/multi-bracket-validation.jpg)
-
