@@ -1,4 +1,4 @@
-# Repeated Words
+## Repeated Words
 - Whiteboard challenge from Codefellows Code 401
 
 ## Challenge
@@ -7,4 +7,4 @@
 - Return the first word to occur more than once in that provided string.
 
 ## Solution
-![](./assets/repeated-word.jpg)
+![](./assets/repeated-words.jpg)
