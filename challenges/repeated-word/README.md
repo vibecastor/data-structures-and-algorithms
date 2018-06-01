@@ -7,4 +7,4 @@
 - Return the first word to occur more than once in that provided string.
 
 ## Solution
-![](./assets/repeated-words.jpg)
+![](./assets/repeated_words.jpg)
