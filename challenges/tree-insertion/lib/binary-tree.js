@@ -5,3 +5,4 @@ export default class BinaryTree {
     this.root = root;
   }
 }
+
