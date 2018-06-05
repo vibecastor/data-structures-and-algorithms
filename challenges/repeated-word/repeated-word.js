@@ -1,13 +1,35 @@
 'use strict';
 
-const string = 'hello, my little friend! hello!?.';
+const string = 'say hello, to my little friend! hello!?.';
+
+// let splitString = string.replace(/(\.|,|\?|!)/g, '').split(/\s/); // ?
+
 
 const repeatedWord = (longString) => {
-  let splitString = string.split(/[,.!?\s]+/);
-  // console.log(splitString);
+  const splitString = longString.replace(/(\.|,|\?|!)/g, '').split(/\s/); // ?
 
-  let collection = new Map();
-  for (let word of longString) {
-    map[word] = 1;
+  const collection = new Map(); // ?
+  collection.set(splitString); // ?
+
+  for (let values of collection) {
+    console.log(values);
+
   }
-};
+
+
+
+
+  // for (let i = 0; i < splitString.length; i++) {
+  //   collection.set(splitString); // ?
+  //
+  //   if (current === splitString[i ++]) {
+  //     return current;
+  //   }
+  // // }
+  // console.log(collection.has('hello'));
+  return;
+}
+
+repeatedWord(string); // ?
+
+export default repeatedWord;
