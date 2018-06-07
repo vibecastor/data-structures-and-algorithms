@@ -3,7 +3,7 @@
 const LinkedList = require('../lib/linked-list');
 const Node = require('../lib/node');
 
-describe.skip('linked-list.js', () => {
+describe('linked-list.js', () => {
   test('#constructor', () => {
     const testList = new LinkedList();
     expect(testList.head).toBeNull();
@@ -54,13 +54,17 @@ describe.skip('linked-list.js', () => {
     testList.append(3);
     testList.append(4);
     testList.append(5);
-    expect(testList.popLastNode()).toEqual(5);
+    expect(testList.popLastNode()).toEqual(5); // ?
   });
-  // test('#mergeList', () => {
-  //   const testList1 = new LinkedList();
-  //   const testList2 = new LinkedList();
-  //   mergeList (testlist1, testList2) => { // not sure what to pass in to test this yet...
-  //
-  //   }
-  // })
+  test('#reverseList', () => {
+    const testList = new LinkedList(); // ?
+    testList.append(1); // ?
+    testList.append(2); // ?
+    testList.append(3); // ?
+    testList.append(4); // ?
+    testList.append(5); // ?
+    console.log(testList); //?
+    testList.reverse();
+    expect(testList.head.value).toEqual(5);
+  });
 });
