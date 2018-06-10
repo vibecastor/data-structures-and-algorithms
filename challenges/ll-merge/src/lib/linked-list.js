@@ -16,7 +16,7 @@ module.exports = class LinkedList {
     const node = new Node(value);
     if (!this.head) {
       this.head = node;
-      return this;
+      return this; // ?
     }
     let currentNode = this.head;
     // ensures node.next exists
@@ -65,14 +65,26 @@ module.exports = class LinkedList {
       currentNode = currentNode.next;
     }
   }
-  reduceNodes() {
-    
+  reverse() {
+    let currentNode = this.head;
+
+    let next = null;
+    let last = null;
+    if (!this.head) {
+      throw new Error('the list is empty');
+    }
+    if (!currentNode.next) {
+      currentNode = null;
+      return currentNode;
+    }
+
+    while (currentNode.next) {
+      next = currentNode.next;
+      currentNode.next = last;
+      last = currentNode;
+      currentNode = next;
+    }
+    currentNode.next = last;
+    return currentNode;
   }
 };
-
-// while (currentNode.next.next) {
-//   currentNode = currentNode.next;
-// }
-// const temp = currentNode.next;
-// currentNode.next = null;
-// return temp;
