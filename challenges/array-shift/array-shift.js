@@ -1,28 +1,28 @@
 const testArray = [1, 2, 3, 4, 5, 6];
 
 const insertShiftArray = (array, newValue) => {
-  let middleIndex = Math.ceil(array.length / 2); // ?
-  let lastElement = array.length; // ?
+  let middleIndex = Math.ceil(array.length / 2);
+  let lastElement = array.length;
   let shiftedArray = [];
 
   for (let i = 0; i < array.length; i++) {
     if (i < middleIndex) {
-      shiftedArray[i] = array[i]; // ?
+      shiftedArray[i] = array[i];
     }
     if (i === middleIndex) {
-      shiftedArray[i] = newValue; // ?
+      shiftedArray[i] = newValue;
     }
     if (i > middleIndex) {
-      shiftedArray[i] = array[i - 1]; // ?
+      shiftedArray[i] = array[i - 1];
     }
     if (i === array.length - 1) {
-      shiftedArray[i + 1] = lastElement; // ?
+      shiftedArray[i + 1] = lastElement;
     }
   }
-  return shiftedArray; // ?
+  return shiftedArray;
 };
 
-insertShiftArray(testArray, 10); // ?
+insertShiftArray(testArray, 10);
 
 // ------------------------
 // Algorithm
