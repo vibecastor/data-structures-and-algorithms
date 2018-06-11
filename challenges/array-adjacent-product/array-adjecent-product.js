@@ -5,32 +5,67 @@ const largestProduct = (array) => {
 
   for (let i = 0; i < array.length; i++) {
     for (let j = 0; j < array[i].length; j++) {
-      let current = array[i][j]; // ?
-      let right = array[i][j + 1]; // ?
-      let diagonal = array[i + 1][j + 1]; // ?
-      let down = array[i + 1][j]; // ?
+      let center = array[i][j + 1]; // ?
+      let right = array[i][j + 2]; // ?
+      let lowerRight = array[i + 1][j + 2]; // ?
+      // cannot read property '2' of undefined for lowerRight....
+      let down = array[i + 1][j + 1]; // ?
+      let lowerLeft = array[i + 1][j - 1]; // ?
+      let left = array[i][j - 1]; // ?
+      let upperLeft = array[i][j]; // ?
+      let up = array[i][j + 1]; // ?
+      let upperRight = array[i][j + 2]; // ?
 
-      // if (array[i][j]) {
-      //   right = array[i + 1][j + 1]; // ?
-      //   down = array[i + 2][j]; // ?
-      // }
-      // if (array[i + 2][j]) {
-      //   right = array[i + 2][j + 1]; // ?
-      //   down = array[i + 3][j]; // ?
-      // }
-      if (current * right > largest) {
-        largest = current * right; // ?
+      if (center * right > largest) {
+        console.log(center);
+        console.log(right);
+        largest = center * right; // ?
       }
-      if (current * diagonal > largest) {
-        largest = current * diagonal; // ?
+      if (center * lowerRight > largest) {
+        console.log(center);
+        console.log(lowerRight);
+        largest = center * lowerRight; // ?
       }
-      if (current * down > largest) {
-        largest = current * down; // ?
+      if (center * down > largest) {
+        console.log(center);
+        console.log(down);
+        largest = center * down; // ?
       }
+      if (center * lowerLeft > largest) {
+        console.log(center);
+        console.log(down);
+        largest = center * lowerLeft; // ?
+      }
+      if (center * left > largest) {
+        console.log(center);
+        console.log(left);
+        largest = center * left; // ?
+      }
+      if (center * upperLeft > largest) {
+        console.log(center);
+        console.log(upperLeft);
+        largest = center * upperLeft; // ?
+      }
+      if (center * up > largest) {
+        console.log(center);
+        console.log(up);
+        largest = center * up; // ?
+      }
+      if (center * upperRight > largest) {
+        console.log(center);
+        console.log(upperRight);
+        largest = center * upperRight; // ?
+      }
+      console.log(largest);
+      // return largest; // ?
+      // you are getting 64 here but not able to return it outside the loop
     }
-    return largest; // ?
+    // return largest; // ?
+    // you are getting 64 here but not able to return it outside the loop
+    console.log(largest);
   }
   return largest; // ?
+  // no output here...
 }
 
 largestProduct(twoDimensionalArray); // ?
