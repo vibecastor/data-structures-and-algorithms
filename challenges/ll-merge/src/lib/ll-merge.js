@@ -1,7 +1,7 @@
 'use strict';
 
 const Node = require('./node');
-const linkedList = require('./linked-list');
+const LinkedList = require('./linked-list');
 
 const firstList = new LinkedList();
 const secondList = new LinkedList();
