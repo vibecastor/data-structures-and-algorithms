@@ -76,12 +76,20 @@ class LinkedList {
 
 // console.log(new LinkedList('hello!'));
 
-const list = new LinkedList('first')
-  . _addSingleItemToHead('second')
-  . _addSingleItemToHead('third')
+const list = new LinkedList()
+console.log(list)
+list._addSingleItemToHead(1) // ?
+list._addSingleItemToHead(2) // ?
+console.log(list)
+list.addToHead(3, 4, 5, 6, 7); // ?
+console.log(list)
+list.remove(6);  // ?
+// . _addSingleItemToHead('')
+  // . _addSingleItemToHead('third')
+  // .addToHead(5, 4, 3, 2, 1)
 
-console.log(list);
-console.log(list.removeFromHead());
-console.log(list);
-console.log(list.find('first'));
-console.log(list.remove('first'));
+// console.log(list);
+// console.log(list.removeFromHead());
+// console.log(list);
+// console.log(list.find(2));
+// console.log(list.remove());
